@@ -176,6 +176,21 @@ body {
 	background-color: #fff;
 }
 
+.githubButton {
+	color: #B0C4DE;
+	padding: 15px 20px;
+	display: inline-block;
+	margin-top: 20px;
+	border: 1px solid #B0C4DE;
+	border-radius: 2px;
+}
+
+.githubButton:hover {
+	text-decoration: none;
+	color: #fff;
+	background-color: #B0C4DE;
+}
+
 .filter a {
 	color: #bdc3c7;
 	border: 1px solid #bdc3c7;
