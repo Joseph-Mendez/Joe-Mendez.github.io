@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Java Developer.", "Web Application Developer.", "Full-Stack Engineer."],
+		strings: ["Web Application Developer.", "JavaScript Developer.", "React Developer.", "Full-Stack Engineer."],
 		typeSpeed: 60,
 		loop: true,
 		startDelay: 1000,
