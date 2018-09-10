@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Web Application Developer.", "Full-Stack Developer.", "DevOps Engineer."],
+		strings: ["Web Application Developer.", "please scroll down", ".NET Developer.", "please scroll down", "Full-Stack Developer.", "please scroll down"],
 		typeSpeed: 60,
 		loop: true,
 		startDelay: 1000,
