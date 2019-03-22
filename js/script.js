@@ -18,8 +18,8 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["DEVELOPER,", "SOFTWARE ENGINEER,", "FRONT-END DEVELOPER.", "please scroll down"],
-		typeSpeed: 60,
+		strings: ["FULL-STACK DEVELOPER.", "SOFTWARE ENGINEER.", "FRONT-END DEVELOPER."],
+		typeSpeed: 85,
 		loop: true,
 		startDelay: 1000,
 		showCursor: false
