@@ -70,7 +70,7 @@ body {
 
 .skillsSection,
 .contactSection {
-	background-color: #e74c3c;
+	background-color: #448;
 	color: #fff;
 }
 
@@ -141,7 +141,7 @@ body {
 	font-size: 56px;
 	margin-bottom: 10px;
 	font-weight: 400;
-	color: #e74c3c;
+	color: #448;
 }
 
 .squareContent h3 {
@@ -172,17 +172,15 @@ body {
 
 .contactButton:hover {
 	text-decoration: none;
-	color: #e74c3c;
+	color: #448;
 	background-color: #fff;
 }
 
 .filter a {
-	color: #000000;
-	padding: 15px 20px;
-	display: inline-block;
-	margin-top: 20px;
-	border: 1px solid #000000;
-	border-radius: 2px;
+	color: #448;
+	border: 1px solid #bdc3c7;
+	padding: 10px 18px;
+	display: block;
 }
 
 .filter li {
@@ -191,9 +189,8 @@ body {
 }
 
 .filter .current {
-	background-color: #e74c3c;
-	;
-	border-color: #e74c3c;
+	background-color: #448;
+	border-color: #448;
 	color: #fff;
 }
 
@@ -245,7 +242,7 @@ body {
 }
 
 .items .icons i {
-	color: #ffffff;
+	color: #fff;
 	font-size: 20px;
 	margin-top: 9px;
 }
@@ -253,7 +250,7 @@ body {
 .items a {
 	width: 40px;
 	height: 40px;
-	background-color: #e74c3c;
+	background-color: #448;
 	position: relative;
 	display: inline-block;
 
@@ -327,7 +324,7 @@ body {
 }
 
 #navigation {
-	background-color: #e74c3c;
+	background-color: #000000;
 	padding: 20px 10px;
 	z-index: 100;
 	width: 100%;
@@ -338,12 +335,12 @@ body {
 }
 
 #navigation li a {
-	color: #fff;
+	color: #FFFFFF;
 }
 
 .navbar-brand,
 .navbar-brand:hover {
-	color: #fff;
+	color: #FFFFFF;
 }
 
 .navbar-toggler-icon {
@@ -359,7 +356,7 @@ body {
 .loader {
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: #000000;
 	position: fixed;
 	top: 0px;
 	left: 0px;
