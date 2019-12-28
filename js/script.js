@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["FULL-STACK DEVELOPER.", "SOFTWARE ENGINEER.", "CODER."],
+		strings: ["FULL-STACK DEVELOPER,", "SOFTWARE ENGINEER,", "CODER."],
 		typeSpeed: 85,
 		loop: true,
 		startDelay: 1000,
