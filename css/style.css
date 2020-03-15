@@ -70,7 +70,7 @@ body {
 
 .skillsSection,
 .contactSection {
-	background-color: #448;
+	background-color: rgba(0,123,255,.25);
 	color: #fff;
 }
 
@@ -189,8 +189,8 @@ body {
 }
 
 .filter .current {
-	background-color: #448;
-	border-color: #448;
+	background-color: rgba(0,123,255,.25);
+	border-color: rgba(255, 255, 255);
 	color: #fff;
 }
 
@@ -250,7 +250,7 @@ body {
 .items a {
 	width: 40px;
 	height: 40px;
-	background-color: #448;
+	background-color: rgba(0,123,255,.25);
 	position: relative;
 	display: inline-block;
 
