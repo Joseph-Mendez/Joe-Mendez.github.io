@@ -18,7 +18,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["BACK-END DEVELOPER", "FRONT-END DEVELOPER", "FULL-STACK ENGINEER"],
+		strings: ["FRONT-END DEVELOPER", "FULL-STACK ENGINEER", "UI/UX Designer"],
 		typeSpeed: 100,
 		loop: true,
 		startDelay: 1000,
