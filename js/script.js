@@ -1,7 +1,8 @@
+
 $(window).on("load", function() {
 
-	$(".loader .inner").fadeIn(500, function() {
-
+	$(".loader .inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
 	});
 
 })
@@ -10,6 +11,12 @@ $(window).on("load", function() {
 
 
 $(document).ready(function() {
+
+	$('#slides').superslides({
+		animation: 'fade',
+		play: 3000,
+		pagination: false
+	});
 
 	var typed = new Typed(".typed", {
 		strings: ["FRONT-END DEVELOPER", "FULL-STACK ENGINEER", "UI/UX Designer"],
@@ -50,7 +57,22 @@ $(document).ready(function() {
 	var countUpFinished = false;
 	$(window).scroll(function() {
 
-		
+		if(window.pageYOffset > skillsTopOffset - $(window).height() + 200) {
+
+			$('.chart').easyPieChart({
+		        easing: 'easeInOut',
+		        barColor: '#fff',
+		        trackColor: false,
+		        scaleColor: false,
+		        lineWidth: 4,
+		        size: 152,
+		        onStep: function(from, to, percent) {
+		        	$(this.el).find('.percent').text(Math.round(percent));
+		        }
+		    });
+
+
+		}
 
 
 		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
