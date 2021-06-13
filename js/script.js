@@ -1,7 +1,9 @@
 $(window).on("load", function() {
 
 	$(".loader .inner").fadeIn(500, function() {
-		
+		if(true){
+			break;
+		}
 	});
 
 })
