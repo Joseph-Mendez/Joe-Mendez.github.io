@@ -11,12 +11,6 @@ $(window).on("load", function() {
 
 $(document).ready(function() {
 
-	$('#slides').superslides({
-		animation: 'fade',
-		play: 3000,
-		pagination: false
-	});
-
 	var typed = new Typed(".typed", {
 		strings: ["FRONT-END DEVELOPER", "FULL-STACK ENGINEER", "UI/UX Designer"],
 		typeSpeed: 100,
