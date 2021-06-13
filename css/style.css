@@ -13,68 +13,6 @@ body {
 	background-color: rgba(0, 0, 0, 0.4);
 }
 
-.slides-navigation {
-	z-index: 6;
-}
-
-.slides-navigation .prev,
-.slides-navigation .next {
-	width: 47px;
-	height: 47px;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-.slides-navigation a.prev {
-	left: 20px;
-	background-image: url(../img/icons/prev.png);
-}
-
-.slides-navigation a.next {
-	right: 20px;
-	background-image: url(../img/icons/next.png);
-}
-
-.bounce {
-  position:fixed;
-  left:50%;
-  bottom:0;
-  margin-top:-25px;
-  margin-left:-25px;
-  height:50px;
-  width:50px;
-  background:;
-  -webkit-animation:bounce 1s infinite;
-  -moz-animation:bounce 1s infinite;
-  -o-animation:bounce 1s infinite;
-  animation:bounce 1s infinite;
-
-}
-
-@-webkit-keyframes bounce {
-  0%       { bottom:0px; }
-  50%      { bottom:15px; }
-  100%     {bottom:30;}
-}
-
- @-moz-keyframes bounce {
-  0%       { bottom:0px; }
-  50%      { bottom:15px; }
-  100%     {bottom:30;}
-}
-
- @-o-keyframes bounce {
-  0%       { bottom:0px; }
-  50%      { bottom:15px; }
-  100%     {bottom:30;}
-}
-
- @keyframes bounce {
-  0%       { bottom:0px; }
-  50%      { bottom:15px; }
-  100%     {bottom:30;}
-}
-
 .titleMessage {
 	position: absolute;
 	width: 100%;
