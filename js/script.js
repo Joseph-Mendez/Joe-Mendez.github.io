@@ -1,24 +1,21 @@
 $(window).on("load", function() {
 
-	$(".loader .inner").fadeOut(500, function() {
-		$(".loader").fadeOut(750);
+	$(".loader .inner").fadeOut(1000, function() {
+		$(".loader").fadeOut(3000);
 	});
 
 })
-
-
-
 
 $(document).ready(function() {
 
 	$('#slides').superslides({
 		animation: 'fade',
-		play: 3000,
+		play: 5000,
 		pagination: false
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["FRONT-END DEVELOPER", "FULL-STACK ENGINEER", "UI/UX Designer"],
+		strings: ["Please Scroll Down"],
 		typeSpeed: 100,
 		loop: true,
 		startDelay: 1000,
