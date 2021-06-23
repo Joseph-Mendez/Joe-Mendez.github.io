@@ -1,7 +1,7 @@
 body {
 	font-size: 14px;
-	color: #000000;
-	background-color: #000000
+	color: #333;
+	background-color: #fff;
 	letter-spacing: 1px;
 }
 
@@ -181,7 +181,7 @@ body {
 }
 
 .contactButton {
-	color: #000000;
+	color: #fff;
 	padding: 15px 20px;
 	display: inline-block;
 	margin-top: 20px;
@@ -201,9 +201,7 @@ body {
 	padding: 10px 18px;
 	display: block;
 }
-.filter a:hover{
-	color: #8FC1E3;
-}
+
 .filter li {
 	display: inline-block;
 	padding: 5px
