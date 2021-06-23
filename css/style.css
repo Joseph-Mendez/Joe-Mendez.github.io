@@ -89,7 +89,7 @@ body {
 
 .skillsSection,
 .contactSection {
-	background-color: #0066ff;
+	background-color: #8FC1E3;
 	color: #fff;
 }
 
@@ -181,7 +181,7 @@ body {
 }
 
 .contactButton {
-	color: #fff;
+	color: #000000;
 	padding: 15px 20px;
 	display: inline-block;
 	margin-top: 20px;
