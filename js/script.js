@@ -93,7 +93,7 @@ $(document).ready(function() {
 	$(".items").isotope({
 		filter: '*',
 		animationOptions: {
-			duration: 1500,
+			duration: 5000,
 			easing: 'linear',
 			queue: false
 		}
@@ -109,7 +109,7 @@ $(document).ready(function() {
 		$(".items").isotope({
 			filter: selector,
 			animationOptions: {
-				duration: 1500,
+				duration: 5000,
 				easing: 'linear',
 				queue: false
 			}
