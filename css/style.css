@@ -297,10 +297,11 @@ body {
 }
 
 #navigation {
-  background-color: #000000;
+  background-color: #fff;
   padding: 20px 10px;
   z-index: 100;
   width: 100%;
+  border-color: #000;
 }
 
 #navigation li {
@@ -308,7 +309,7 @@ body {
 }
 
 #navigation li a {
-  color: #fff;
+  color: #000;
 }
 
 .navbar-brand,
