@@ -5,9 +5,9 @@ body {
   letter-spacing: 1px;
 }
 
-.navbar.navbar-expand-lg {
-  padding-top: 15px;
-  padding-bottom: 15px;
+nav#navigation.navbar.navbar-expand-lg {
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .overlay {
   width: 100%;
