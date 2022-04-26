@@ -297,9 +297,10 @@ body {
 
 #navigation {
   background-color: #fff;
-  padding: 40px 10px;
+  padding: 35px 10px;
   z-index: 100;
   width: 100%;
+  box-shadow: 0 3px 6px lightgrey;
 }
 
 #navigation li {
