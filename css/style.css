@@ -1,9 +1,11 @@
 body {
   font-size: 14px;
-  color: #000000;
+  color: #424242;
   background-color: #ffffff;
   letter-spacing: 1px;
+  font-family: 'Lato' !important;
 }
+
 .overlay {
   width: 100%;
   height: 100%;
@@ -46,10 +48,16 @@ body {
   max-width: 100%;
 }
 
+.intro {
+  margin-top: 40px;
+  font-size: large
+}
+
 .skillsSection,
 .contactSection {
-  background-color: #4374b8;
-  color: #fff;
+  background-color: #f2f7fa;
+  color: #424242;
+  border: 1px solid #d7d7d7
 }
 
 .skill {
@@ -120,7 +128,7 @@ body {
 }
 
 .squareContent h3 {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   margin: 0;
 }
@@ -137,41 +145,54 @@ body {
 }
 
 .contactButton {
-  color: #fff;
-  padding: 15px 20px;
+  color: #424242;
+  padding: 12px 25px;
   display: inline-block;
   margin-top: 20px;
-  border: 1px solid #fff;
-  border-radius: 2px;
+  border: 1px solid #0073E6;
+  border-radius: 90px;
 }
 
 .contactButton:hover {
   text-decoration: none;
-  color: #4374b8;
-  background-color: #fff;
+  color: #fff;
+  background-color: #0073E6;
 }
 
 .filter a {
-  color: #000;
-  border: 1px solid #bdc3c7;
-  padding: 10px 18px;
+  color: #424242;
+  border: 1px solid #0073E6;
+  padding: 12px 25px;
   display: block;
+  border-radius: 90px;
 }
 
 .filter li {
   display: inline-block;
-  padding: 5px;
+  padding: 3px;
 }
 
 .filter .current {
-  background-color: #4374b8;
-  border-color: rgba(255, 255, 255);
+  background-color: #0073E6;
+  border-color: #0073E6;
   color: #fff;
+  border-radius: 90px;
+}
+
+.filter a:hover {
+  color: #fff;
+  background-color: #0073E6;
+  text-decoration: underline solid transparent 1px;
 }
 
 .filter {
   text-align: center;
   width: 100%;
+}
+
+ul#filters {
+  margin-bottom: 40px;
+  padding-left: 0px
 }
 
 .section .heading {
@@ -224,7 +245,7 @@ body {
 .items a {
   width: 40px;
   height: 40px;
-  background-color: #4374b8;
+  background-color: #424242;
   position: relative;
   display: inline-block;
 
@@ -238,7 +259,7 @@ body {
 .items .imageOverlay {
   width: 100%;
   height: 100%;
-  background-color: #000;
+  background-color: #424242;
   position: relative;
   left: 0px;
   top: 0px;
@@ -286,8 +307,8 @@ body {
 }
 
 .copyrightSection {
-  background-color: #000000;
-  color: #000;
+  background-color: #424242;
+  color: #424242;
   padding: 30px 5px;
 }
 
@@ -297,23 +318,28 @@ body {
 
 #navigation {
   background-color: #fff;
-  padding: 35px 10px;
+  padding: 30px 10px;
   z-index: 100;
   width: 100%;
-  box-shadow: 0 3px 6px lightgrey;
+  box-shadow: 0 3px 5px rgb(236, 236, 236);
 }
 
 #navigation li {
   padding: 0 10px;
+  margin: 0 auto;
 }
 
 #navigation li a {
-  color: #000;
+  color: #424242;
+}
+
+#navigation li a:hover {
+  color: #0073E6
 }
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: #000;
+  color: #424242;
 }
 
 .navbar-toggler-icon {
@@ -329,7 +355,7 @@ body {
 .loader {
   width: 100%;
   height: 100%;
-  background-color: #000000;
+  background-color: #fff;
   position: fixed;
   top: 0px;
   left: 0px;
@@ -339,12 +365,117 @@ body {
 .loader .inner {
   width: 100%;
   height: 100%;
-  background: url(../img/loader.gif) center center no-repeat;
+  background: url(../img/1476.gif) center center no-repeat;
 }
+
+div.skill {
+  margin-top: 20px;
+}
+
 #footer {
   position: absolute;
   bottom: 0;
   padding: 30px;
   width: 100%;
-  height: 2.5rem; /* Footer height */
+  height: 2.5rem;
+  border-top: 1px solid #424242;
+  /* Footer height */
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Lato' !important;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+
+/*
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardProfile {
+  background-color: #0073E6;
+  height: 100px;
+  width: 120px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1em;
+  z-index: -1;
+}
+
+
+.circle-bg {
+  background-color: transparent;
+  border: 3px solid #fff;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.circle {
+  background-color: #fff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.face-circle {
+  height: 4px;
+  width: 4px;
+  border: .5em solid transparent;
+  border-radius: 50%;
+  background: #0073E6;
+  z-index: 3;
+}
+
+.profileBody {
+  position: relative;
+  height: 8px;
+  z-index: 2;
+  width: 28px;
+  background-color: #0073E6;
+  border-radius: 2em 2em 0 0;
+}
+*/
