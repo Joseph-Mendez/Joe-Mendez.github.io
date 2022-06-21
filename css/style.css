@@ -430,6 +430,6 @@ a { color: white; text-decoration: none; }
   }
 }
 
-.apps col-xs-6 col-sm-4 col-md-3 col-lg-3 {
-  padding-bottom: 20px;
+.apps.col-xs-6.col-sm-4.col-md-3.col-lg-3 {
+  padding-bottom: 60px;
 } 
