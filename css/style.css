@@ -197,6 +197,7 @@ ul#filters {
 
 .itemsContainer {
   width: 100%;
+  clear: both;
 }
 
 .items li img {
@@ -441,6 +442,3 @@ a { color: white; text-decoration: none; }
   padding-top: 40px;
   clear: both;
 } 
-.row {
-  clear: both;
-}
