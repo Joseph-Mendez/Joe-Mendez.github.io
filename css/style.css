@@ -449,7 +449,7 @@ a { color: white; text-decoration: none; }
   font-size: 56px;
 }
 
-@media (max-width: 600px) {
+@viewport (max-width: 600px) {
   .counter1 {
     font-size: 32px;
   }
