@@ -449,7 +449,7 @@ a { color: white; text-decoration: none; }
   font-size: 32px;
 }
 
-@media only screen and (min-width: 400px) { {
+@viewport (min-width: 400px) { {
   .counter1 {
     font-size: 56px;
   }
