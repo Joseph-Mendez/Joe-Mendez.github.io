@@ -82,6 +82,17 @@ $(document).ready(function() {
 			countUpFinished = true;
 
 		}
+		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
+			$(".counter1").each(function() {
+				var element = $(this);
+				var endVal = parseInt(element.text());
+
+				element.countup(endVal);
+			})
+
+			countUpFinished = true;
+
+		}
 
 
 	});
