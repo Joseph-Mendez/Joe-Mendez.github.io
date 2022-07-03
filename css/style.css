@@ -444,8 +444,12 @@ a { color: white; text-decoration: none; }
   padding-bottom: 80px;
   padding-top: 40px;
   clear: both;
-} 
-@media (max-width: 600px) {
+}
+.counter1 {
+  font-size: 18px;
+}
+
+@viewport (max-width: 600px) {
   .counter1 {
     font-size: 12px;
   }
