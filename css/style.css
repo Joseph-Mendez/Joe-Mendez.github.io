@@ -446,11 +446,11 @@ a { color: white; text-decoration: none; }
   clear: both;
 }
 .counter1 {
-  font-size: 24px;
+  font-size: 56px;
 }
 
 @viewport (max-width: 600px) {
   .counter1 {
-    font-size: 18px;
+    font-size: 32px;
   }
 }
