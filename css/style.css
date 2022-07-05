@@ -455,6 +455,6 @@ a { color: white; text-decoration: none; }
   }
 }
 .portoButton {
-  display: flex;
-  justify-content: center;
+  display:block; 
+  margin: 0 auto;
 }
