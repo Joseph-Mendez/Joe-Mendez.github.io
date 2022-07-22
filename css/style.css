@@ -21,7 +21,7 @@ body {
   top: 50%;
   z-index: 5;
   text-align: center;
-  margin-top: -125px;
+  margin-top: -135px;
 }
 
 .titleMessage .heading p {
@@ -330,9 +330,15 @@ ul#filters {
   color: #0073E6
 }
 
+div#navbarNav.collapse.navbar-collapse {
+  justify-content: center;
+  margin-left: -175px;
+}
+
 .navbar-brand,
 .navbar-brand:hover {
   color: #424242;
+  padding-left: 10px;
 }
 
 .navbar-toggler-icon {
@@ -414,7 +420,7 @@ a { color: white; text-decoration: none; }
 
 .arrow {
   text-align: center;
-  margin: 8% 0;
+  margin: 5% 0;
 }
 .bounce {
   -moz-animation: bounce 2s infinite;
