@@ -13,7 +13,7 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["Please Scroll Down"],
+		strings: [""],
 		typeSpeed: 100,
 		loop: true,
 		startDelay: 1000,
