@@ -54,8 +54,10 @@ body {
 
 .skillsSection.section {
   background-color: #ffffff;
-  border-radius: 20px;
-  margin: 0px;
+  border-radius: 12px;
+  display: flex;
+align-items: center;
+justify-content: center;
 }
 .contactSection {
   background-color: #ffffff;
