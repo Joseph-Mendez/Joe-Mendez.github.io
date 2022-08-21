@@ -52,7 +52,10 @@ body {
   font-size: large
 }
 
-.skillsSection,
+.skillsSection {
+  background-color: #ffffff;
+  border-radius: 20px;
+}
 .contactSection {
   background-color: #ffffff;
   color: #424242;
