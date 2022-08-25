@@ -13,7 +13,8 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: [""],
+		strings: ["JOSEPH MENDEZ"],
+		strings: ['Product Designer'],
 		typeSpeed: 100,
 		loop: true,
 		startDelay: 1000,
