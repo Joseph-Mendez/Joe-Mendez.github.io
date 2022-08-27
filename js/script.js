@@ -35,11 +35,7 @@ $(document).ready(function() {
 	        },
 	        768:{
 	            items:3
-	        },
-	        938:{
-	            items:4
 	        }
-
 	    }
 	});
 
