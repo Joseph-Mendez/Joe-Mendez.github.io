@@ -174,7 +174,7 @@ body {
 
 .filter a:hover {
   color: #fff;
-  background-color: #0073E6;
+  background-color: #7657FA;
   box-shadow: 0px 1px 6px #424242 !important;
   text-decoration: underline transparent 3.5px;
 }
@@ -243,7 +243,7 @@ ul#filters {
 .items a {
   width: 40px;
   height: 40px;
-  background-image: linear-gradient(#93aeff 10%, #3366FF);
+  background-color: #7657FA;
   position: relative;
   display: inline-block;
 
@@ -332,7 +332,7 @@ ul#filters {
 }
 
 #navigation li a:hover {
-  color: #0073E6
+  color: #7657FA
 }
 
 div#navbarNav.collapse.navbar-collapse {
