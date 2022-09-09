@@ -13,14 +13,12 @@ $(document).ready(function() {
 	});
 
 	var typed = new Typed(".typed", {
-		strings: ["JOSEPH MENDEZ"],
-		strings: ['Product Designer'],
+		strings: ["Product Designer"],
 		typeSpeed: 100,
 		loop: true,
 		startDelay: 1000,
 		showCursor: false
 	});
-
 	$('.owl-carousel').owlCarousel({
 	    pagination:false,
 	    dots:false,
