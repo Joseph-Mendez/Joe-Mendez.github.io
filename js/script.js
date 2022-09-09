@@ -1,14 +1,19 @@
 $(window).on("load", function() {
 
-	$(".loader .inner").fadeOut(1000, function() {
-		$(".loader").fadeOut(3000);
+	$(".loader .inner").fadeOut(500, function() {
+		$(".loader").fadeOut(750);
 	});
 
 })
 
+
+
+
 $(document).ready(function() {
 
 	$('#slides').superslides({
+		animation: 'fade',
+		play: 3000,
 		pagination: false
 	});
 
@@ -19,6 +24,7 @@ $(document).ready(function() {
 		startDelay: 1000,
 		showCursor: false
 	});
+
 	$('.owl-carousel').owlCarousel({
 	    pagination:false,
 	    dots:false,
@@ -37,6 +43,7 @@ $(document).ready(function() {
 	        938:{
 	            items:4
 	        }
+
 	    }
 	});
 
@@ -74,16 +81,11 @@ $(document).ready(function() {
 
 				element.countup(endVal);
 			})
-			$(".counter1").each(function() {
-				var element = $(this);
-				var endVal = parseInt(element.text());
-
-				element.countup(endVal);
-			})
 
 			countUpFinished = true;
 
 		}
+
 
 	});
 
@@ -94,7 +96,7 @@ $(document).ready(function() {
 	$(".items").isotope({
 		filter: '*',
 		animationOptions: {
-			duration: 5000,
+			duration: 1500,
 			easing: 'linear',
 			queue: false
 		}
@@ -110,7 +112,7 @@ $(document).ready(function() {
 		$(".items").isotope({
 			filter: selector,
 			animationOptions: {
-				duration: 5000,
+				duration: 1500,
 				easing: 'linear',
 				queue: false
 			}
