@@ -1,9 +1,9 @@
 body {
   font-size: 14px;
-  color: #000;
+  color: #424242;
   background-color: #ffffff !important;
   letter-spacing: 1px;
-  font-family: 'Fira Mono' !important;
+  font-family: 'Lato' !important;
 }
 
 .overlay {
@@ -53,19 +53,18 @@ body {
 }
 
 .skillsSection.section {
-  background-color: #000;
+  background-color: #ffffff;
+  border-radius: 12px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 .contactSection {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #424242;
   border: 1px solid #d5d5d5 20%;
 }
-.thanksSection.section {
-  background-color: #000;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: -200px;
-}
+
 .skill {
   text-align: center;
   margin-left: 10px;
@@ -86,7 +85,7 @@ body {
 }
 
 .chart .percent {
-  color: #fff;
+  color: #444;
   line-height: 152px;
   display: inline-block;
   font-size: 35px;
@@ -97,13 +96,13 @@ body {
 }
 
 .squareItem {
-  margin-top: 28px;
+  margin-top: 30px;
   position: relative;
 }
 
 .squareInnerContainer {
   position: relative;
-  padding: 60px 25px 35px;
+  padding: 60px 15px 35px;
   text-align: center;
   border: 2px solid transparent;
   border-top: none;
@@ -136,25 +135,25 @@ body {
 }
 
 .contactButton {
-  color: #fff;
-  font-size: 23px;
-  font-weight: 500;  
-  background-color: #7fa4d0;
-  padding: 11px 70px;
+  color: #fff;  
+  background-color: #7657FA;
+  padding: 12px 24px;
   display: inline-block;
   margin-top: 20px;
-  border-radius: 50px;
+  border-radius: 6px;
+  box-shadow: 0px .5px 1px #3366FF !important;
+  
 }
 
 .contactButton:hover {
   text-decoration: none;
-  color:#f9e8a3;
-  box-shadow: 0px 4px 3px #f9e8a3 !important;
+  color:#fff;
+  box-shadow: 0px 1px 6px #424242 !important;
 }
 
 .filter a {
   color: #fff;
-  background-color: #7fc3f0;
+  background-color: #7657FA;
   padding: 12px 24px;
   display: block;
   border-radius: 9px;
@@ -166,7 +165,7 @@ body {
 }
 
 .filter .current {
-  background-color: #7fa4d0;
+  background-color: #7657FA;
   color: #fff;
   border-radius: 9px;
   border: 1 solid #424242 !important;
@@ -175,7 +174,7 @@ body {
 
 .filter a:hover {
   color: #fff;
-  background-color: #7fa4d0;
+  background-color: #7657FA;
   box-shadow: 0px 1px 6px #424242 !important;
   text-decoration: underline transparent 3.5px;
 }
@@ -244,7 +243,7 @@ ul#filters {
 .items a {
   width: 40px;
   height: 40px;
-  background-color: #7fa4d0;
+  background-color: #7657FA;
   position: relative;
   display: inline-block;
 
@@ -316,10 +315,11 @@ ul#filters {
 }
 
 #navigation {
-  background-color: #161617cc;
-  padding: 10px 10px;
+  background-color: #fff;
+  padding: 30px 10px;
   z-index: 100;
   width: 100%;
+  box-shadow: 0px 3px 10px #d4d4d4 ;
 }
 
 #navigation li {
@@ -328,21 +328,22 @@ ul#filters {
 }
 
 #navigation li a {
-  color: #fff;
+  color: #424242;
 }
 
 #navigation li a:hover {
-  text-decoration: underline solid #7fa4d0 3.5px;
+  color: #7657FA
 }
 
 div#navbarNav.collapse.navbar-collapse {
-  justify-content: right;
+  justify-content: center;
+  margin-left: -195px;
 }
 
 .navbar-brand,
 .navbar-brand:hover {
-  color: #fff;
-  padding-left: 20px;
+  color: #424242;
+  padding-left: 10px;
 }
 
 .navbar-toggler-icon {
@@ -368,10 +369,7 @@ div#navbarNav.collapse.navbar-collapse {
 .loader .inner {
   width: 100%;
   height: 100%;
-  background: url(../img/asteroid.gif) center center no-repeat;
-  background-color: #f5f8fa;
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
+  background: url(../img/1476.gif) center center no-repeat;
 }
 
 div.skill {
@@ -387,25 +385,15 @@ div.skill {
   border-top: 1px solid #424242;
   /* Footer height */
 }
-h5 {
-  color: #fff;
-}
+
 h1,
 h2,
 h3,
 h4,
+h5,
 h6 {
-  color: #000;
-}
-
-p {
-  font-weight: 500;
-  font-size: medium;
-}
-
-li  {
-  font-size: medium;
-  font-weight: 500;
+  font-family: 'Lato' !important;
+  color: #424242;
 }
 
 .material-icons {
