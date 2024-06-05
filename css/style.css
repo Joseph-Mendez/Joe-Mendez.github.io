@@ -316,10 +316,10 @@ ul#filters {
 
 #navigation {
   background-color: #fff;
-  padding: 10px 10px;
+  padding: 15px 10px;
   z-index: 100;
   width: 100%;
-  box-shadow: 0px 3px 10px #d4d4d4 ;
+  box-shadow: 0px 3px 5px #d4d4d4 ;
 }
 
 #navigation li {
