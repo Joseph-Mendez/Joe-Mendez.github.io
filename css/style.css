@@ -316,7 +316,7 @@ ul#filters {
 
 #navigation {
   background-color: #fff;
-  padding: 30px 10px;
+  padding: 10px 10px;
   z-index: 100;
   width: 100%;
   box-shadow: 0px 3px 10px #d4d4d4 ;
@@ -343,11 +343,11 @@ div#navbarNav.collapse.navbar-collapse {
 .navbar-brand,
 .navbar-brand:hover {
   color: #424242;
-  padding-left: 10px;
+  padding-left: 5px;
 }
 
 .navbar-toggler-icon {
-  background: url(../img/icons/menu.svg);
+  background: url(../img/icons8-hamburger-50.png);
   background-size: 100%;
 }
 
