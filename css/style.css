@@ -22,7 +22,7 @@ p {
   font-weight: 400;
   color: #dfe0e2;
   position: relative;
-  z-index: 1000;
+  z-index: 5;
 }
 
 li {
@@ -30,6 +30,7 @@ li {
   margin-bottom: 10px;
   font-weight: 400;
   color: #dfe0e2;
+  z-index: 5;
 }
 
 .fa-envelope:before {
@@ -359,6 +360,7 @@ li {
     padding-right: 15px;
     font-family: "Carlito", sans-serif !important;
     margin: 0 auto;
+    font-size: 1rem !important;
   }
 
   .text-box {
@@ -850,7 +852,7 @@ li {
 
 .fixedWidth {
   max-width: 50vw;
-  z-index: 1000;
+  z-index: 5;
   position: relative;
   color: #fff;
 }
@@ -1082,9 +1084,7 @@ canvas {
 .downloadButton i {
   margin: 0 auto;
 }
-.contactButton i {
-  padding-left: 1px;
-}
+
 .downloadButton {
   height: 300px;
   width: 300px;
@@ -1268,6 +1268,14 @@ h4,
 h5,
 h6 {
   color: rgba(255, 255, 255, 0.87);
+}
+
+h3.quote {
+  padding-left: 15px;
+  padding-right: 15px;
+  font-family: "Carlito", sans-serif !important;
+  margin: 0 auto;
+  font-size: 2rem;
 }
 
 a {
