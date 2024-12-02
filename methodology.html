@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     <link
         href="https://fonts.googleapis.com/css2?family=Anton&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&display=swap"
         rel="stylesheet">
@@ -23,6 +26,9 @@
     <script src="https://kit.fontawesome.com/c75a0766ea.js" crossorigin="anonymous"></script>
 
     <style>
+        body {
+            font-family: 'Noto Sans', sans-serif !important;
+        }
         .case-section {
             display: flex;
             flex-flow: column;
@@ -32,7 +38,16 @@
 
         li {
             margin-left: 25px;
-            ;
+        }
+        p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+        }
+
+        #navigation li a {
+            color: #ffffff;
+            font-size: .9rem !important;
+            font-weight: 400;
         }
 
         @media only screen and (max-width: 576px) {
@@ -47,7 +62,7 @@
             }
 
             h3 {
-                font-size: 1.25rem;
+                font-size: 1.5rem;
             }
 
             P {
@@ -106,7 +121,7 @@
                             title="Home"></i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#methodology">METHODOLOGY</a>
+                    <a class="nav-link" href="#caseStudy" style="white-space: nowrap">CASE STUDIES</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="research.html">RESEARCH</a>
@@ -121,10 +136,10 @@
     <section id="intro" style="margin-top: .75%;">
         <div class="container-fluid">
             <div class="title-container">
-                <h2 id="companionMethods" style="color: #fff; z-index: 100; margin-top: 40px;" class="text-box">
+                <h2 id="companionMethods" style="color: #fff; z-index: 100; margin-top: 20px;" class="text-box">
                     Methodology</h2>
             </div>
-            <div class="container text-center" style="margin-top: 50px;">
+            <div class="container text-center" style=" margin-top: 5%; ">
                 <p>
                     My methodology is rooted in a user-centered design approach.
 
@@ -147,7 +162,7 @@
         </div>
     </section>
     <div id="gap" class="container-fluid"></div>
-    <div id="methodology" class="title-container">
+    <div id="#caseStudy" class="title-container">
         <h2 id="companionMethods" class="text-box"
             style="color: #000000 !important; padding-bottom: 10px; padding-top: 10px; font-size: 22vw;">
             Case Study #1
@@ -866,12 +881,15 @@
     </section>
     <div id="gap" class="container-fluid"></div>
     <section id="contact" style="padding: 0px !important">
-        <div class="contact-container"><img src="img/back.webp"></div>
+        <div class="contact-container"><img src="img/background_1.png"></div>
         <div class="container-fluid" style="z-index: 500;">
-            <div class="title-container" style=" z-index: 500;">
-                <h3 id="ccMethods" class="text-box" style=" z-index: 500;">Let's Talk</h3><a
-                    href="https://linkedin.com/in/joe-mendez-hughes" class="lI"
-                    style="z-index: 500; color: #00CC66; "><i class="fa-brands fa-linkedin fa-8x"></i></a>
+            <div class="title-container" style=" z-index: 500; display: flex; align-items: center;">
+                <h3 id="ccMethods" class="text-box"
+                    style=" z-index: 500; display: inline-block; vertical-align: middle">Let's Talk</h3>
+                <a href="https://linkedin.com/in/joe-mendez-hughes" target="_blank" rel="noopener noreferrer" class="lI"
+                    title="LinkedIn"
+                    style="z-index: 500; color: #00CC66; display: inline-block; vertical-align: middle;"><i
+                        class="fa-brands fa-linkedin fa-8x"></i></a>
             </div>
             <div class="container text-center"
                 style="padding-bottom: 20px; z-index: 500; margin: 0 auto; display: inline;">
@@ -888,29 +906,32 @@
         </div>
     </section>
     <div id="gap" class="container-fluid"></div>
-    <section id="thanks" class="thanksSection section" style="padding-bottom: 0px !important;">
-        <div class="container-fluid">
+    <section id="footer" class="section" style="padding-bottom: 0px !important;">
+        <div class="contact-container"><img src="img/background_4.png"></div>
+        <div class="container-fluid" style="z-index: 500">
             <div class="title-container">
-                <h2 id="cciMethods" class="text-box">Thanks</h2>
+                <h3 id="cciMethods" class="text-box" style="color: #fff !important">Thanks</h3>
             </div>
-            <div class="container text-center">
-                <h2 class="quote"
-                    style="margin-top: 10%; position: relative; font-family: 'Carlito', sans-serif !important; text-align: center;">
-                    Dear Guest,
-                    <h2 class="quote" style="position: relative; font-family: 'Carlito', sans-serif !important;">
-                        Thank you for visiting my website! I truly appreciate your time and interest, and I look forward
+            <div class="container text-center" style="margin: auto; margin-top: 10%;">
+                <div class="paragraph">
+                    <p style="font-size: 2rem !important; margin: auto; color: #fff !important">
+                        Dear Guest,</br>
+                        Thank you for visiting my website! I truly appreciate your time and interest, and I look
+                        forward
                         to
-                        connecting with you soon!</h2>
-            </div>
-            <div class="thanks-container" style="margin-top: 10%">
-                <img src="img/standard.svg" alt="Logo">
+                        connecting with you soon!
+                    </p>
+                </div>
+                <div class="footer-image" style="padding-bottom: 25px;">
+                    <img src="img/standard.svg" alt="Logo">
+                </div>
             </div>
         </div>
     </section>
     <div id="smallGap" class="container-fluid"></div>
     <div class="copyright">
         <h6
-            style="color: #333333; font-family: sans-serif; font-size: .8rem; z-index: 100;margin-bottom: 0px !important; text-align: center;">
+            style="color: #222; font-family: sans-serif; font-size: .8rem; z-index: 100; margin-bottom: 0px !important; text-align: center;">
             &copy;2024 Joe Mendez-Hughes</h6>
     </div>
     <div id="smallGap" class="container-fluid"></div>
