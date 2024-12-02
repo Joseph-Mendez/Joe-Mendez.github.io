@@ -528,8 +528,7 @@ li {
 
 /***************************************************    Sections       *****************************************/
 .paragraph {
-  margin: 40px;
-
+  margin: 80px;
   justify-content: center;
   align-items: center;
 }
@@ -1015,7 +1014,6 @@ li {
 #methodology {
   position: relative;
   overflow: hidden; /* Ensures the image is contained in the section */
-  display: flex; /* For layout purposes, adjust if necessary */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
 }
