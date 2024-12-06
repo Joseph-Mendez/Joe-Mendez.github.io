@@ -894,7 +894,7 @@ li {
   overflow: hidden; /* Ensures the image is contained in the section */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
-  border-color: #000000 !important;
+  background-color: #ffffff !important;
 }
 
 .footer-container {
