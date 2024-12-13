@@ -1311,7 +1311,7 @@ div#navbarNav.collapse.navbar-collapse {
 }
 
 .navbar-brand img {
-  height: 30px; /* Adjust the height of the logo */
+  height: 24px; /* Adjust the height of the logo */
   width: auto; /* Keeps the aspect ratio of the logo */
   padding: 0% !important;
   margin: 0;
