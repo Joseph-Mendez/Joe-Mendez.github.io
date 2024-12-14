@@ -1270,7 +1270,7 @@ canvas {
   transform: translateX(-50%);
   align-items: center;
   justify-content: center;
-  min-width: 780px;
+  min-width: 800px;
   padding-top: 10px;
   padding-bottom: 10px;
   backdrop-filter: blur(12px);
@@ -1308,6 +1308,7 @@ div#navbarNav.collapse.navbar-collapse {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   line-height: 0;
+  padding-left: 10px;
 }
 
 .navbar-brand img {
