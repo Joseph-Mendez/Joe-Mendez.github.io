@@ -10,9 +10,11 @@
 
 body {
   background-color: rgba(255 255 255 1) !important;
-  font-family: 'Mona Sans', sans-serif !important;
+  font-family: "Be Vietnam Pro", serif !important;
   padding-left: 0px;
   padding-right: 0px;
+  margin: 0 !important;
+  padding: 0;
 }
 
 p {
@@ -33,17 +35,112 @@ li {
   z-index: 5;
 }
 
-.fa-envelope:before {
-  padding: 0 !important;
+.be-vietnam-pro-thin {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 100;
+  font-style: normal;
 }
 
-.mona-sans-font {
-  font-family: "Mona Sans", sans-serif;
-  font-optical-sizing: auto;
+.be-vietnam-pro-extralight {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.be-vietnam-pro-light {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.be-vietnam-pro-regular {
+  font-family: "Be Vietnam Pro", serif;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+}
+
+.be-vietnam-pro-medium {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.be-vietnam-pro-semibold {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.be-vietnam-pro-bold {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.be-vietnam-pro-extrabold {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.be-vietnam-pro-black {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.be-vietnam-pro-thin-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.be-vietnam-pro-extralight-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.be-vietnam-pro-light-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.be-vietnam-pro-regular-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.be-vietnam-pro-medium-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.be-vietnam-pro-semibold-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.be-vietnam-pro-bold-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.be-vietnam-pro-extrabold-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.be-vietnam-pro-black-italic {
+  font-family: "Be Vietnam Pro", serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 .anton-regular {
@@ -58,13 +155,11 @@ li {
 
 .landing-image-container {
   position: relative;
-  width: 99%;
-  height: 97vh; /* Full viewport height */
+  width: 100%;
+  height: 100%; /* Full viewport height */
   overflow: hidden;
   align-items: center;
   justify-content: center;
-  background-color: rgba(255 255 255 1) !important;
-  border-radius: 30px;
 }
 
 /* Common styles for all landing images */
@@ -74,43 +169,13 @@ li {
   overflow: hidden;
 }
 
-/* Default to desktop image */
-.desktop-image {
-  display: block;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 75%;
-  height: auto;
-}
+/************************* Max-width 1200px *************************/
 
-.mobile-image {
-  display: none;
+@media only screen and (max-width: 1200px) {
+  .squareInnerContainer {
+    min-height: auto !important;
+  }
 }
-
-/*******************************************PDF Viewer********************************************/
-.pdf-container {
-  width: 80%;
-  height: 80vh; /* Make it responsive but not take full height on desktop */
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc; /* Optional: To show boundaries */
-}
-
-.desktop-device {
-  display: block;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.mobile-device {
-  display: none;
-}
-/*******************************************END********************************************/
 
 /*******************************************     MOBILE @ 1024px  *******************************************/
 @media only screen and (max-width: 1025px) {
@@ -121,32 +186,12 @@ li {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
   }
-  .desktop-device {
-    display: block;
-  }
 
-  .mobile-device {
-    display: none;
-  }
-
-  .desktop-image {
-    display: none;
-  }
-  .mobile-image {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
   .container d-flex align-items-center {
     margin-left: 15px;
     margin-right: 15px;
   }
-  div.thanks-container {
-    max-width: 65vw; /* Maximum width of the image container */
-    height: 100%;
-  }
+
   .thanks-container img {
     width: 100%; /* Make the image responsive */
     height: auto;
@@ -168,35 +213,38 @@ li {
     max-width: 100vw !important;
     min-width: 100vw !important;
   }
-    section {
+  section {
     padding-bottom: 20px !important;
     margin: 0 auto;
     background-color: #000000 !important;
-    max-width: 99%;
     height: auto !important;
-    width: 99vw;
+  }
+  .resume-section {
+    max-width: 98vw;
+  }
+  #slides h1, h4, h6, a.button-2 {
+    margin-left: 30px;
+  }
+  #slides a.button-2 {
+    margin-left: 10px;
+  }
+  .resume-section {
+    max-width: 97vw;
+  }
+  #slides {
+    max-height: 966px;
   }
 }
 /*******************************************END********************************************/
 
 /*******************************************    MOBILE @ 750px     ********************************************/
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 769px) {
   .landing-image {
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
-  .desktop-image {
-    display: none;
-  }
-  .mobile-image {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
   }
 
   div.thanks-container {
@@ -206,14 +254,6 @@ li {
   .thanks-container img {
     width: 100%; /* Make the image responsive */
     height: auto;
-  }
-
-  .desktop-device {
-    display: block;
-  }
-
-  .mobile-device {
-    display: none;
   }
   ul {
     padding-left: 10px;
@@ -242,9 +282,6 @@ li {
     padding-bottom: 1px !important;
   }
 
-  .fixedWidth {
-    max-width: 85vw !important;
-  }
   .heading-section {
     max-width: 85vw !important;
   }
@@ -255,9 +292,7 @@ li {
     padding-bottom: 20px !important;
     margin: 0 auto;
     background-color: #000000 !important;
-    max-width: 99%;
     height: auto !important;
-    width: 99vw;
   }
   #gap {
     background-color: transparent;
@@ -266,24 +301,31 @@ li {
     min-height: 12px !important;
     box-shadow: none;
   }
+  .resume-section {
+    max-width: 98vw;
+  }
 }
 /*******************************************END********************************************/
 
 /******************************************* MOBILE @ 576px ********************************************/
 @media only screen and (max-width: 576px) {
-  body {
-    padding-left: 8px;
-    padding-right: 8px;
-  }
 
   section {
-    border-radius: 20px !important;
     padding: 0px 20px;
     margin: 0 auto;
     background-color: #000000 !important;
-    max-width: 99%;
     height: auto !important;
-    width: 99vw;
+  }
+    #stats {
+    padding-top: 20px !important;
+  }
+  #slides .col{
+    font-size: 100% !important;
+  }
+
+  #contact {
+    padding: 2px 2px !important;
+    margin-bottom: 20px
   }
 
   .landing-image {
@@ -294,43 +336,11 @@ li {
     transform: translateY(-50%);
   }
 
-  .desktop-image {
-    display: none;
-  }
-
-  .mobile-image {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
 
   #navbar .navbar.navbar-expand-lg.navbar-dark {
     align-items: center;
     justify-content: center;
     margin: auto 0;
-  }
-
-  .pdf-container {
-    width: 100%;
-    height: 100%; /* Make it responsive but not take full height on desktop */
-    max-width: 95vw;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 0.1px solid transparent; /* Optional: To show boundaries */
-  }
-  .desktop-device {
-    display: none;
-  }
-
-  .mobile-device {
-    display: block;
-    width: 100%; /* Make the image responsive */
-    height: auto;
-    padding: 0px 10px;
   }
 
   p {
@@ -348,13 +358,6 @@ li {
     justify-content: center;
     align-items: center;
   }
-  h3.quote {
-    padding-left: 15px;
-    padding-right: 15px;
-    font-family: "Poppins", sans-serif !important;
-    margin: 0 auto;
-    font-size: 1rem !important;
-  }
 
   .text-box {
     max-width: 95vw;
@@ -365,31 +368,19 @@ li {
   .footer-image {
     max-width: 100%; /* Maximum width of the image container */
     height: 100%;
+    margin-top: 50px !important;
+    padding-bottom: 10px !important
   }
+
   .footer-image img {
     width: 100%; /* Make the image responsive */
     height: auto;
+    max-width: 85vw !important;
   }
 
-  #navigation {
-    background: rgba(39, 39, 39, 0.1);
-    backdrop-filter: blur(60px);
-    /* fallback for old browsers */
-    -webkit-backdrop-filter: blur(60px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 0 80px rgba(0, 0, 0, 0.3);
-    z-index: 1000;
-    border-radius: 0px !important;
-    width: 100% !important;
-    min-width: 100vw !important;
-    left: 0 !important;
-    transform: none !important;
-    padding-top: 5px !important;
-    padding-bottom: 5px !important;
-  }
   #compMethods {
-    font-size: 18vw !important;
     text-align: left !important;
+    padding-left: 10px
   }
 
   .navbar-toggler ml-auto {
@@ -418,18 +409,15 @@ li {
   }
 
   .navbar-brand img {
-    max-width: 70vw;
+    max-width: 50vw;
     padding-top: 1px !important;
     padding-bottom: 3px !important;
   }
 
-  .fixedWidth {
-    max-width: 85vw !important;
-    color: #ffffff !important;
-  }
   .heading-section {
     max-width: 85vw !important;
     text-align: center;
+
   }
   .heading-section1 {
     max-width: 85vw !important;
@@ -452,8 +440,7 @@ li {
     transform: scale(0.4, 0.4);
     transition: 200ms;
   }
-  .contactButton,
-  .downloadButton {
+  .contactButton {
     transform: scale(0.5, 0.5);
     transition: transform all ease-out 200ms;
   }
@@ -467,8 +454,66 @@ li {
   }
   .text-box {
     text-align: left;
+
+  }
+  .logo-image  {
+    margin-left: 15px !important;
+  }
+  .logo-image img {
+    max-width: 375px !important;
+  }
+  .col {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  #contact {
+    margin-top: 0px !important;
+  }
+  #contact h6 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  #contact container-fluid {
+    margin-top: -50px !important;
+
+  }
+  #contact .footer-image {
+    margin-top: -50px !important;
+  }
+  #slides h1, h5 {
+    text-align: center !important;
+    padding: 40px 10px !important;
+  }
+    #slides h1 {
+    font-size: 175% !important;
+  }
+ #slides  h4 {
+    font-size: 1.25rem !important;
+  }
+
+  #slides .col, .row, h1, h4, h6, a.button-2{
+    text-align: center !important;
+    padding: 10px 10px !important;
+    margin: 0 auto !important;
+    margin-left: 0px !important;
+  }
+
+  #ooMethods {
+    text-align: center !important;
+  }
+  .resume-container img {
+    width: 50% !important;
+    height: auto !important;
+  }
+  .resume-section {
+    max-width: 95vw !important;
+    width: 100%;
+  }
+  .logo-image{
+    width: 10px !important;
   }
 }
+
 
 /*******************************************END********************************************/
 
@@ -481,15 +526,14 @@ li {
 
 .text-box {
   width: 100%;
-  color: #dfe0e2;
+  color: #ffffff;
   z-index: 100;
   font-size: 11vw;
   font-weight: 700;
   font-family: "Anton", sans-serif !important;
-  top: 0;
-  left: 0;
-  padding-top: 20px;
+  text-align: left;
   text-overflow: clip;
+  padding-left: 20px;
 }
 
 .headingImage {
@@ -510,9 +554,18 @@ li {
   font-size: large;
 }
 
+
 /***************************************************    Sections       *****************************************/
+
+#stats {
+  background: #FFFFFF;
+  color: #000000 !important;
+  min-height: 50vh;
+}
+
 .paragraph {
-  margin: 80px;
+  margin: 40px;
+
   justify-content: center;
   align-items: center;
 }
@@ -524,13 +577,13 @@ li {
 .section {
   padding: 0% 0%;
   background-color: #000000 !important;
-  border-radius: 30px;
+
 }
 
 #intro {
   padding: 40px 0;
   color: rgb(12 12 12);
-  border-radius: 30px;
+
 }
 
 #gap {
@@ -540,45 +593,27 @@ li {
   min-height: 30px;
   box-shadow: none;
 }
-#smallGap {
+#starter {
   background-color: transparent;
+  height: 15px;
+  max-height: 15px;
+  min-height: 15px;
+  box-shadow: none;
+}
+#smallGap {
+  background-color: #fff;
   height: 5px;
   max-height: 5px;
   min-height: 5px;
   box-shadow: none;
 }
 
-
-#research {
-  position: relative;
-  overflow: hidden; /* Ensures the image is contained in the section */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-}
-
-#download {
-  position: relative;
-  overflow: hidden; /* Ensures the image is contained in the section */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-}
-
-.research-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 1;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 70%;
-  width: 50%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-.research-container img {
-  max-width: 100%;
-  height: auto;
+#mediumGap {
+  background-color: #fff;
+  height: 10px;
+  max-height: 10px;
+  min-height: 10px;
+  box-shadow: none;
 }
 
 #skills {
@@ -586,17 +621,21 @@ li {
   overflow: hidden; /* Ensures the image is contained in the section */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
+  padding-top: 20px;
+  padding-bottom: 100px;
 }
 
 .skills-container {
-  z-index: 0 !important;
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
   pointer-events: none; /* Prevent interactions with the image */
   position: absolute; /* So it can stretch behind everything */
   top: 0;
-  left: 0;
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 100%;
+  left: 80%;
+  width: 30%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
 }
 
 .skills-container img {
@@ -625,10 +664,6 @@ li {
   bottom: 0;
 }
 
-#nvidiacolor {
-  color: #76bb02;
-}
-
 #message {
   position: relative;
   overflow: hidden; /* Ensures the image is contained in the section */
@@ -641,6 +676,9 @@ li {
   overflow: hidden; /* Ensures the image is contained in the section */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
+  width: 100%;
+  height: auto;
+
 }
 
 #resume {
@@ -651,7 +689,7 @@ li {
   border: transparent;
   background-color: transparent !important;
   box-shadow: none !important;
-  border-radius: 0%;
+
 }
 
 #thanks {
@@ -665,31 +703,10 @@ li {
   border-radius: 0%;
 }
 
-#numbers {
-  object-fit: contain !important;
-  position: relative;
-  overflow: hidden; /* Ensures the image is contained in the section */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  background: transparent !important;
-  box-shadow: none !important;
-  border: none;
-  border-radius: 0%;
-}
 
 #numbers .section .statsSection container text-center {
   position: relative; /* Ensure the content is above the background image */
   z-index: 20; /* Content is on top */
-}
-
-#download {
-  border-radius: 30px;
-  /*object-fit: contain !important;*/
-  position: relative;
-  overflow: hidden; /* Ensures the image is contained in the section */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  margin: 0 auto;
 }
 
 .resume container text-center {
@@ -703,97 +720,7 @@ li {
   display: flex; /* For layout purposes, adjust if necessary */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
-}
-
-.about-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 1;
-  pointer-events: none;
-  position: absolute;
-  top: 10%;
-  left: 70%;
-  width: 30%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.about-container img {
-  max-width: 100%;
-  height: auto;
-  z-index: 1;
-}
-
-.main-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 2;
-  pointer-events: none;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
-}
-
-.main-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.message-container {
-  mask-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 1;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  right: 70%;
-  width: 40%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-.message-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.background-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 1;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 55%;
-  width: 50%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-.background-container img {
-  max-width: 100%;
-  height: auto;
-}
-
-.experience-image-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 1;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 60%;
-  width: 40%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-.experience-image-container img {
-  max-width: 100%;
-  height: auto;
+  height: 100vh;
 }
 
 #contact {
@@ -801,6 +728,8 @@ li {
   overflow: hidden; /* Ensures the image is contained in the section */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
+  background-color: #ffffff !important;
+  color: #333333 !important;
 }
 
 .contact-container {
@@ -819,42 +748,84 @@ li {
   height: 100%;
 }
 
-.download-container {
-
-  z-index: 0 !important;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
+.bg-overlay {
+  background-color: #141414;
+  opacity: .5;
   top: 0;
   left: 0;
   object-fit: cover;
-  object-position: 50% 50%;
-  width: 100%;
 }
 
-.download-container img {
+.resume-image-container1 {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 60%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+.resume-image-container2 {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 60%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+.resume-image-container3 {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 60%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+.resume-image-container4 {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 60%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+.resume-image-container5 {
+  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+  z-index: 1;
+  pointer-events: none; /* Prevent interactions with the image */
+  position: absolute; /* So it can stretch behind everything */
+  top: 0;
+  left: 60%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
+}
+
+.resume-image-container1 img,
+.resume-image-container2 img,
+.resume-image-container3 img,
+.resume-image-container4 img,
+.resume-image-container5 img {
   display: block;
   height: 100%;
 }
 
-.title-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0 !important;
-  left: 0 !important;
-  padding-left: 30px;
-  padding-right: 30px;
-}
-
-.resume-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: 0 !important;
-  left: 0 !important;
-  padding-left: 30px;
-  padding-right: 30px;
-}
 
 .fixedWidth {
   max-width: 50vw;
@@ -863,57 +834,39 @@ li {
   color: #fff;
 }
 
-.resume1-image-container img,
-.resume2-image-container img,
-.resume3-image-container img,
-.resume4-image-container img,
-.resume5-image-container img {
-  height: auto;
-  max-width: 100%;
-}
-
 .resume-section {
-  border-radius: 30px;
+  display: grid;
   align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  padding-top: 20px;
   padding-bottom: 20px;
+  padding-left: 20px;
   object-fit: contain !important;
   position: relative;
   overflow: hidden;
+  max-width: 98vw;
+  width: 100%;
+  border-radius: 20px;
 }
 
-.footer-image  {
+.footer-image {
   position: relative;
-  margin: 0 auto;
-  align-items: center;
+  margin-top: 25px;
+  padding-bottom: 20px
 }
 
 .footer-image img {
-  bottom: 0 !important;
-  left:0;
-  max-width: 50vw;
-  margin: 0 auto;
-  padding-top: 100px;
-}
-
-#footer {
-  position: relative;
-  overflow: hidden; /* Ensures the image is contained in the section */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-  background-color: #ffffff !important;
+  max-width: 450px;
 }
 
 .footer-container {
-  z-index: 0 !important;
+  z-index: 1;
   pointer-events: none; /* Prevent interactions with the image */
   position: absolute; /* So it can stretch behind everything */
   top: 0;
-  left: 0;
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 100%;
+  left: 780%;
+  width: 50%; /* Make the image span the entire width */
+  height: 100%; /* Make the image span the entire height */
+  object-fit: cover; /* Ensures the image covers the section without distortion */
+  object-position: center;
 }
 
 .footer-container img {
@@ -921,85 +874,13 @@ li {
   max-width: 100%;
 }
 
-.resume1-image-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 0;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 45%;
-  width: 55%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-.resume2-image-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 0;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 15%;
-  width: 100%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-.resume3-image-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 0;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 75%;
-  width: 30%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-  background-repeat: repeat;
-}
-
-.resume4-image-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 0;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 50%;
-  width: 50%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-.resume5-image-container {
-  mask-image: linear-gradient(to left, rgb(0, 0, 0), rgba(0, 0, 0, 0));
-  z-index: 0;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 49%;
-  width: 75%; /* Make the image span the entire width */
-  height: 100%; /* Make the image span the entire height */
-  object-fit: cover; /* Ensures the image covers the section without distortion */
-  object-position: center;
-}
-
-#slides {
-  position: relative;
-  overflow: hidden; /* Ensures the image is contained in the section */
-  display: flex; /* For layout purposes, adjust if necessary */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-}
-
-#methodology {
+#footer {
   position: relative;
   overflow: hidden; /* Ensures the image is contained in the section */
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
+  background-color: #000000 !important;
+  color: #ffffff !important;
 }
 
 .main-container {
@@ -1018,31 +899,14 @@ li {
   max-width: 100%;
 }
 
-.methodology-container {
-  z-index: 0 !important;
-  pointer-events: none; /* Prevent interactions with the image */
-  position: absolute; /* So it can stretch behind everything */
-  top: 0;
-  left: 0;
-  object-fit: cover;
-  object-position: 50% 50%;
-  width: 100%;
-}
-
-.methodology-container img {
-  height: auto;
-  max-width: 100%;
-}
-
 /* Headings */
 .section .heading {
   width: 100%;
 }
 
 .heading-section {
-  color: #dfe0e2;
-  font-family: "Anton", sans-serif;
-  font-size: 4vw;
+  color: #ffffff;
+  font-size: 1.5rem;
   z-index: 100;
   padding-top: 10px;
   position: relative;
@@ -1050,10 +914,9 @@ li {
 }
 
 .heading-section1 {
-  color: #ffffff;
+  color: #FFFFFF;
   font-family: "Anton", sans-serif;
-  font-size: 6vw;
-  max-width: 50vw;
+  font-size: 3rem;
   padding-top: 10px;
   position: relative;
   z-index: 100;
@@ -1067,26 +930,289 @@ section {
   padding: 0px 0px;
   margin: 0 auto;
   background-color: #000000 !important;
-  max-width: 99%;
   height: auto;
-  width: 99vw;
-  height: 97vh;
   padding: 0% 0%;
-  border-radius: 30px;
 }
 
-/***************************************************    END Sections       *****************************************/
-
 .thanks-container {
-  max-width: 55vw; /* Maximum width of the image container */
-  margin: 0 auto;
-  bottom: 0;
-  z-index: 500;
+  background-color: #ffffff;
 }
 
 .thanks-container img {
   width: 100%; /* Make the image responsive */
   height: auto;
+}
+
+/***************************************************    END Sections       *****************************************/
+
+.thanks-container img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+}
+
+.squareItem {
+  margin-top: 20px;
+
+}
+
+.squareInnerContainer {
+  padding: 60px 32px;
+  background-color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  margin: 15px 0;
+  word-wrap: break-word;
+  text-align: center;
+  object-fit: contain;
+  min-height: 745px;
+}
+
+/*********************************************      Buttons       ********************************/
+
+
+.lI {
+  transform: translate3d(0, 0, 0);
+  transition: 0.25s ease-in-out;
+}
+
+.lI:hover {
+  transition: transform all ease-out 200ms;
+  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+}
+
+.lI:active {
+  transform: scale(0.9, 0.9);
+  transition: 200ms;
+}
+
+
+/* CSS */
+.button-1 {
+  background-color: #00CC66;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  border-radius: 2.25rem;
+  padding: 12px 33px;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+
+}
+
+.button-1:hover {
+
+  background: #00cc66;
+  color: #FFF;
+  text-decoration: none;
+  transform: scale(1.05, 1.05) translate3d(0, 0, 0);
+  border-style: none;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15);
+}
+
+
+.button-2 {
+  background-color: transparent;
+  border-radius: 2.25rem;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  padding: 12px 33px;
+  border-style: none;
+  background: transparent !important;
+  border: 2px solid #01cc65;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-2:hover,
+.button-2:focus {
+  background-color: #00CC66 !important;
+  color: #fff;
+}
+
+.button-3 {
+  background-color: #FFF;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  border-radius: 2.25rem;
+  border: transparent;
+  padding: 12px 33px;
+  font-size: 16px;
+  font-weight: 400;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-3:hover,
+.button-3:focus {
+  background-color: #00CC66;
+  color: #fff;
+  border: transparent;
+}
+
+/********************************************* End Buttons   ********************************/
+.col-centered {
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+/********************************************     NAVBAR          ********************************/
+#navigation {
+  z-index: 1000;
+  width: 100%;
+  max-width: 35vw;
+  border-radius: 9999px;
+  background: rgba(39, 39, 39, 0.5);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 0.25px solid rgba(255, 255, 255, 0.1);
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  align-items: center;
+  justify-content: center;
+  min-width: 650px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+#navigation li {
+  margin: 0 auto;
+  color: #ffffff;
+}
+
+#navigation li a {
+  color: #ffffff;
+  font-size: .9rem !important;
+  font-weight: 400;
+}
+
+#navigation li a:hover {
+  color: #00cc66;
+}
+
+div#navbarNav.collapse.navbar-collapse {
+  justify-content: right;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+  margin-top: 0.8%;
+}
+
+.navbar-brand {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+  line-height: 0%;
+  margin-left: 40px;
+  margin-top: 40px;
+  top: 0;
+  left: 0;
+  position: relative;
+}
+
+.navbar-brand img {
+  height: 80px; /* Adjust the height of the logo */
+  width: auto; /* Keeps the aspect ratio of the logo */
+  padding: 0% !important;
+  margin: 0;
+}
+
+.img-responsive {
+  width: 100%;
+  height: 100%;
+}
+
+.collapse.navbar-collapse {
+  justify-content: center;
+  align-items: center;
+}
+
+.container-fluid.align-items-center {
+  padding: 0%;
+}
+/********************************************     END 6      ********************************/
+.loader {
+  width: 100vw;
+  height: 100%;
+  background-color: #000000;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+.loader .inner {
+  width: 100%;
+  height: 100%;
+  background: url(../img/loader.webp) center center no-repeat;
+  background-color: #000000;
+  z-index: 10000;
+  align-items: center;
+  object-fit: contain;
+}
+
+div.skill {
+  margin-top: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: rgba(255, 255, 255, 1);
+}
+
+a {
+  text-decoration: none;
+}
+
+.titleMessage {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px;
+  bottom: 0;
+  padding-bottom: 2%;
 }
 
 .chart {
@@ -1156,250 +1282,7 @@ canvas {
 }
 
 .squareIcon {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
-}
+  padding-bottom: 15px;
 
-/*********************************************      Buttons       ********************************/
-.contactButton,
-.downloadButton i {
-  margin: 0 auto;
-}
-
-.downloadButton {
-  height: 300px;
-  width: 300px;
-  display: inline-block;
-  border-radius: 100%;
-  border: 1px solid #00cc66;
-  line-height: 57px;
-  top: 50%;
-  left: 50%;
-  color: #000000;
-  box-shadow: none;
-  background: #00cc66;
-  outline: none;
-  transition: 0.25s ease-in-out;
-  line-height: 23;
-  text-align: center;
-  transform: translate3d(0, 0, 0);
-}
-
-.downloadButton:hover {
-  transition: transform all ease-out 200ms;
-  background: #00cc66;
-  color: #000000;
-  text-decoration: none;
-  border: 0.25px solid transparent;
-  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-}
-
-.downloadButton:active {
-  transform: scale(0.9, 0.9);
-  transition: 200ms;
-}
-
-.downloadButton i {
-  margin: 0 auto;
-}
-
-.contactButton {
-  height: 300px;
-  width: 300px;
-  display: inline-block;
-  border-radius: 100%;
-  border: 1px solid #00cc66;
-  line-height: 57px;
-  top: 50%;
-  left: 50%;
-  color: #000000;
-  box-shadow: none;
-  background: #00cc66;
-  outline: none;
-  transition: 0.25s ease-in-out;
-  line-height: 23;
-  text-align: center;
-  transform: translate3d(0, 0, 0);
-}
-
-.contactButton:hover {
-  transition: transform all ease-out 200ms;
-  background: #00cc66;
-  color: #000000;
-  text-decoration: none;
-  border: 0.25px solid transparent;
-  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-}
-
-.contactButton:active {
-  transform: scale(0.9, 0.9);
-  transition: 200ms;
-}
-
-.contactButton i {
-  margin: 0 auto;
-}
-
-.lI {
-  transform: translate3d(0, 0, 0);
-  transition: 0.25s ease-in-out;
-}
-
-.lI:hover {
-  transition: transform all ease-out 200ms;
-  transform: scale(1.1, 1.1) translate3d(0, 0, 0);
-}
-
-.lI:active {
-  transform: scale(0.9, 0.9);
-  transition: 200ms;
-}
-
-/********************************************* End Buttons   ********************************/
-
-/********************************************     NAVBAR          ********************************/
-#navigation {
-  z-index: 1000;
-  width: 100%;
- max-width: 35vw;
-  border-radius: 999px;
-  background: rgba(0, 0, 0, 1);
-  border: 0.1px solid rgba(12, 12, 12, 0.2);
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  align-items: center;
-  justify-content: center;
-  min-width: 800px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  backdrop-filter: blur(12px);
-}
-
-#navigation li {
-  margin: 0 auto;
-  color: #ffffff;
-}
-
-#navigation li a {
-  color: #ffffff;
-  font-size: .9rem !important;
-  font-weight: 500;
-  font-family: "Mona Sans", sans-serif !important;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-#navigation li a:hover {
-  color: #00cc66;
-}
-
-div#navbarNav.collapse.navbar-collapse {
-  justify-content: right;
-}
-
-.fixedNav #navigation {
-  position: fixed;
-  top: 0;
-  margin-top: 0.8%;
-}
-
-.navbar-brand {
-  padding-top: 0px !important;
-  padding-bottom: 0px !important;
-  line-height: 0;
-  padding-left: 10px;
-}
-
-.navbar-brand img {
-  height: 24px; /* Adjust the height of the logo */
-  width: auto; /* Keeps the aspect ratio of the logo */
-  padding: 0% !important;
-  margin: 0;
-}
-
-.img-responsive {
-  width: 100%;
-  height: 100%;
-}
-
-.collapse.navbar-collapse {
-  justify-content: center;
-  align-items: center;
-}
-
-.container-fluid.align-items-center {
-  padding: 0%;
-}
-
-
-/********************************************     END NAVBAR      ********************************/
-.loader {
-  width: 100%;
-  height: 100%;
-  background-color: #000000;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1000;
-}
-
-.loader .inner {
-  width: 100%;
-  height: 100%;
-  background: url(../img/loader.webp) center center no-repeat;
-  background-color: #000000;
-  z-index: 10000;
-  align-items: center;
   object-fit: contain;
-}
-
-div.skill {
-  margin-top: 20px;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: rgba(255, 255, 255, 0.87);
-}
-
-a {
-  text-decoration: none;
-}
-
-.titleMessage {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding: 10px;
-  bottom: 0;
-  padding-bottom: 2%;
-}
-
-.bounce {
-  -moz-animation: bounce 2s infinite;
-  -webkit-animation: bounce 2s infinite;
-  animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%,
-  20%,
-  50%,
-  80%,
-  100% {
-    transform: translateY(0);
-  }
-
-  40% {
-    transform: translateY(-30px);
-  }
-
-  60% {
-    transform: translateY(-15px);
-  }
 }
