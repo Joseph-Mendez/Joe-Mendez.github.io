@@ -460,7 +460,7 @@ li {
     margin-left: 15px !important;
   }
   .logo-image img {
-    max-width: 375px !important;
+    max-width: 350px !important;
   }
   .col {
     margin-top: 100px;
@@ -941,6 +941,15 @@ section {
 .thanks-container img {
   width: 100%; /* Make the image responsive */
   height: auto;
+}
+
+#quote {
+  background-color: #FFFFFF !important;
+  color: #141414 !important;
+  position: relative;
+  overflow: hidden; /* Ensures the image is contained in the section */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
 }
 
 /***************************************************    END Sections       *****************************************/
